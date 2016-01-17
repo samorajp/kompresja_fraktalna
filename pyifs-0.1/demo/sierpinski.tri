@@ -1,0 +1,13 @@
+# Sierpinski Triangle
+
+# Initial triangle
+0 0	0 2	2 2
+
+# Top left corner
+0 1	0 2	1 2
+
+# Top right corner
+1 1	1 2	2 2
+
+# Bottom left corner
+0 0	0 1	1 1

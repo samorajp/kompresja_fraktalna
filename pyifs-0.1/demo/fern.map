@@ -1,0 +1,13 @@
+# Fern colour map
+
+# Max. colour value
+15
+
+# Background colour (black)
+0	0	0
+
+# Colour map entries [interp value, red, green, blue]
+0	15	10	0
+3	15	15	0
+7	0	15	0
+1000	0	15	0

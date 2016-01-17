@@ -1,0 +1,44 @@
+#! /usr/bin/env python
+
+import sys
+sys.path.insert(0, "../src")
+from ifs import *
+
+if len(sys.argv) < 3:
+    print "Usage: %s infile outfile" % sys.argv[0]
+    sys.exit(1)
+
+infile  = sys.argv[1]
+outfile = sys.argv[2]
+
+size = 300
+iterations = 30000
+
+mappings = []
+
+try:
+    f = open(infile)
+    lnum = 0
+    for line in f:
+        lnum += 1
+        text = line.strip()
+
+        if len(text) == 0 or text.startswith("#"):
+            continue
+
+        data = text.split()
+        map = Mapping(*data)
+        mappings.append(map)
+
+    f.close()
+    ifs = IFS(*mappings)
+    points = ifs.random(size, size, iterations, clip = 1)
+    points.image().save(outfile, "PNG")
+
+except IFSError, msg:
+    print "IFS error: %s, line %d: %s" % (infile, lnum, msg)
+    sys.exit(1)
+
+except IOError, msg:
+    print msg
+    sys.exit(1)

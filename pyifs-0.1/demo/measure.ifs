@@ -1,0 +1,15 @@
+# Fractals Everywhere, page 335
+
+# This example illustrates the effects of varying the iteration
+# probabilities.  The fractal image is merely a square, but points
+# `fall' on it with different frequencies in different places.
+# Adjusting the probabilities produces many diverse textures.
+
+# About 100000 iterations is best (but may need adjusting for larger
+# image sizes).  The pattern becomes `saturated' if too many points
+# are added.
+
+.5	0	0	.5	0	0	0.1
+.5	0	0	.5	1	0	0.2
+.5	0	0	.5	0	1	0.3
+.5	0	0	.5	1	1	0.4

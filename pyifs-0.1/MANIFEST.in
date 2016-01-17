@@ -1,0 +1,2 @@
+include NEWS COPYING Makefile MANIFEST MANIFEST.in
+recursive-include demo Makefile *.tri *.map *.ifs ifs2png

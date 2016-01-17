@@ -1,0 +1,17 @@
+This package is a python module for generating images from iterated
+function systems.  To build it:
+
+    python setup.py build
+
+To install it:
+
+    python setup.py install
+
+Type
+
+    python setup.py --help
+
+for other things you can do.
+
+Note: if you're on a Linux box you can just type 'make' and 'make install'
+in the usual manner.

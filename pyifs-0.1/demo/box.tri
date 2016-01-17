@@ -1,0 +1,16 @@
+# Fractals Everywhere, page 104
+
+# Initial triangle
+0 0	0 2	2 2
+
+# Top left corner
+0 1	0 2	1 2
+
+# Top right corner
+1 2	2 2	2 1
+
+# Bottom left corner
+1 0	0 0	0 1
+
+# Centre
+.6 .6	.6 1.4	1.4 1.4
